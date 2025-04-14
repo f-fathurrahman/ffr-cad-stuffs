@@ -9,3 +9,6 @@ with BuildPart() as ex2:
     Cylinder(radius=center_hole_dia / 2, height=thickness, mode=Mode.SUBTRACT)
 
 export_to_svg(ex2.part, filename="IMG_02.svg")
+export_step(ex2.part, "IMG_02.step")
+
+
